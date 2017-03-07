@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            background-color: darkgray;
+        }
+        article.header-container{
+            background:url('header5.jpg');
+            width: 1400px;;
+            min-height:300px;
+            position: relative;
+            margin: 0 auto;
+
+
+        }
+        #headerTitle{
+            font-family: "Franklin Gothic Book";
+            font-size: 50px;
+            color: #BBBBBB;
+            text-align: right;
+            font-style: italic;
+            padding-right: 10px;
+        }
+        #navigationList{
+            list-style-type: none;
+            margin: 0;
+            padding:0;
+            overflow: hidden;
+            background-color: #444444;
+            position: absolute;
+            bottom: 0;
+
+        }
+        .navItem{
+            float: left;
+        }
+
+        .navItem a{
+            display: block;
+            color: #EEEEEE;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+
+        .navItem a:hover {
+            background-color: #222222;
+        }
+    </style>
+</head>
+<body>
+<article class ="header-container">
+    <h1 id="headerTitle">THOMAS VANAUSLOOS</h1>
+    <article>
+        <ul id="navigationList">
+            <li class="navItem"><a href="#General">General</a></li>
+            <li class="navItem"><a href="#Education">Education</a></li>
+            <li class="navItem"><a href="#Experience">Experience</a></li>
+            <li class="navItem"><a href="#Service">Service</a></li>
+            <li class="navItem"><a href="#Languages">Languages</a></li>
+        </ul>
+    </article>
+</article>
+</body>
+</html>
