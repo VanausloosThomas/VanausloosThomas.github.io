@@ -9,21 +9,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
     <style>
-        body{
+        body {
             background-color: darkgray;
         }
-        #container{
-            margin:0 auto;
+
+        #container {
+            margin: 0 auto;
             width: 1400px;
         }
-        article.header-container{
-            background:url('header5.jpg');
+
+        article.header-container {
+            background: url('header5.jpg');
             width: 1400px;;
-            min-height:300px;
+            min-height: 300px;
             position: relative;
             margin: 0 auto;
         }
-        #headerTitle{
+
+        #headerTitle {
             font-family: "Franklin Gothic Book";
             font-size: 50px;
             color: #BBBBBB;
@@ -31,51 +34,307 @@
             font-style: italic;
             padding-right: 10px;
         }
-        #navigationList{
+
+        #navigationList {
             list-style-type: none;
             margin: 0;
-            padding:0;
+            padding: 0;
             overflow: hidden;
             background-color: #444444;
             position: absolute;
             bottom: 0;
         }
-        .navItem{
+
+        .navItem {
             float: left;
         }
-        .navItem a{
+
+        .navItem a {
             display: block;
             color: #EEEEEE;
             text-align: center;
             padding: 16px;
             text-decoration: none;
         }
+
         .navItem a:hover {
             background-color: #EEEEEE;
             color: #222222;
         }
+
         .navItem a:active {
             background-color: #EEEEEE;
             color: #222222;
         }
+        .infoContainer{
+            display: run-in;
+        }
+
+        #aboutMe {
+            font-family: "Franklin Gothic Book";
+            font-size: 28px;
+            color: #222222;
+            text-align: center;
+            font-style: italic;
+            line-height: 140%;
+
+            width: 900px;
+            margin-top: 170px;
+            padding-top: 20px;
+            padding-bottom: 40px;
+            background-color: #BBBBBB;
+            float: right;
+        }
+
+        #education {
+            font-family: "Franklin Gothic Book";
+            font-size: 24px;
+            color: #222222;
+            text-align: left;
+            font-style: italic;
+            line-height: 140%;
+
+            width: 900px;
+            hight: 800px;
+            margin-top: 170px;
+            background-color: #BBBBBB;
+            float: right;
+        }
+
+        #education ul {
+            list-style-type: none;
+            display: block;
+            text-align: left;
+        }
+
+        #experience {
+            font-family: "Franklin Gothic Book";
+            font-size: 24px;
+            color: #222222;
+            text-align: left;
+            font-style: italic;
+            line-height: 140%;
+
+            width: 900px;
+            hight: 800px;
+            margin-top: 170px;
+            background-color: #BBBBBB;
+            float: right;
+        }
+
+        #experience ul {
+            list-style-type: none;
+            display: block;
+            text-align: left;
+        }
+
+        #skills {
+            font-family: "Franklin Gothic Book";
+            font-size: 24px;
+            color: #222222;
+            text-align: left;
+            font-style: italic;
+            line-height: 140%;
+
+            width: 900px;
+            hight: 800px;
+            margin-top: 170px;
+            background-color: #BBBBBB;
+            float: right;
+        }
+
+        #skills ul {
+            list-style-type: none;
+            display: block;
+            text-align: left;
+        }
+
+        #languages {
+            font-family: "Franklin Gothic Book";
+            font-size: 24px;
+            color: #222222;
+            text-align: left;
+            font-style: italic;
+            line-height: 140%;
+
+            width: 900px;
+            hight: 800px;
+            margin-top: 170px;
+            background-color: #BBBBBB;
+            float: right;
+        }
+
+        #languages ul {
+            list-style-type: none;
+            display: block;
+            text-align: left;
+        }
     </style>
 </head>
 <body>
-<article class ="header-container">
+<script>
+    function disableAll() {
+        document.getElementById('aboutMe').style.display = 'none';
+        document.getElementById('education').style.display = 'none';
+        document.getElementById('experience').style.display = 'none';
+        document.getElementById('skills').style.display = 'none';
+        document.getElementById('languages').style.display = 'none';
+    }
+    function showGeneral() {
+        disableAll();
+        var x = document.getElementById('aboutMe');
+        if (x.style.display === 'none') {
+            x.style.display = 'block';
+        } else {
+            x.style.display = 'none';
+        }
+    }
+    function showEducation() {
+        disableAll();
+        var x = document.getElementById('education');
+        if (x.style.display === 'none') {
+            x.style.display = 'block';
+        } else {
+            x.style.display = 'none';
+        }
+    }
+    function showExperience() {
+        disableAll();
+        var x = document.getElementById('experience');
+        if (x.style.display === 'none') {
+            x.style.display = 'block';
+        } else {
+            x.style.display = 'none';
+        }
+    }
+    function showSkills() {
+        disableAll();
+        var x = document.getElementById('skills');
+        if (x.style.display === 'none') {
+            x.style.display = 'block';
+        } else {
+            x.style.display = 'none';
+        }
+    }
+    function showLanguages() {
+        disableAll();
+        var x = document.getElementById('languages');
+        if (x.style.display === 'none') {
+            x.style.display = 'block';
+        } else {
+            x.style.display = 'none';
+        }
+    }
+
+</script>
+<article id="container">
     <article class="header-container">
         <h1 id="headerTitle">THOMAS VANAUSLOOS</h1>
         <article>
             <ul id="navigationList">
-                <li class="navItem"><a href="GeneralInfo.html">General</a></li>
-                <li class="navItem"><a href="Education.html">Education</a></li>
-                <li class="navItem"><a href="Experience.html">Experience</a></li>
-                <li class="navItem"><a href="Skills.html">Skills</a></li>
-                <li class="navItem"><a href="Languages.html">Languages</a></li>
+                <li class="navItem"><a onclick="showGeneral()">General</a></li>
+                <li class="navItem"><a onclick="showEducation()">Education</a></li>
+                <li class="navItem"><a onclick="showExperience()">Experience</a></li>
+                <li class="navItem"><a onclick="showSkills()">Skills</a></li>
+                <li class="navItem"><a onclick="showLanguages()">Languages</a></li>
             </ul>
         </article>
     </article>
-    <article>
-
+    <article class="pictureOfMyself">
+        <img src="pictureOfMyself.jpg" alt="picture of myself"
+             style="width:330px;height:750px;float:left;margin-top: 60px;">
+    </article>
+    <article class = "infoContainer">
+        <article id="aboutMe">
+            <p>
+                " I'm young, motivated and always looking for a challenge.
+                I have a broad interest field going from sports to electronics to programming.
+                I'm a real teamplayer passionate about software development ".</p>
+        </article>
+        <article id="education">
+            <ul>
+                <li><b>2001 - 2007</b></li>
+                <li>LATIN MATH| <a href="http://sintpieterscollege.be/" target="_blank"
+                                   style="color:#555555;text-decoration: none;">SINT- PIETERSCOLLEGE LEUVEN</a></li>
+                <br>
+                <li><b>2007 - 2011</b></li>
+                <li>BACHELOR PHYSICAL EDUCATION &
+                    MOVEMENTSCIENCES|<a
+                            href="https://onderwijsaanbod.kuleuven.be/opleidingen/n/CQ_50074203.htm#activetab=diploma_omschrijving"
+                            target="_blank" style="color:#555555;text-decoration: none;"> K.U.LEUVEN</a>
+                </li>
+                <br>
+                <li><b>2001 - 2012</b></li>
+                <li>MASTER PHYSICAL EDUCATION &
+                    MOVEMENTSCIENCES|<a
+                            href="https://onderwijsaanbod.kuleuven.be/opleidingen/n/CQ_52391617.htm#activetab=diploma_omschrijving"
+                            target="_blank" style="color:#555555;text-decoration: none;"> K.U.LEUVEN</a>
+                </li>
+                <br>
+                <li><b>2013 - 2016</b></li>
+                <li>GRADUATE ELEKTRONICS| <a href="https://www.mobyus.be/nl/graduaten/elektronica-optie-multimedia"
+                                             target="_blank" style="color:#555555;text-decoration: none;">ACE
+                    GROEPT/MOBIUS</a></li>
+            </ul>
+        </article>
+        <article id="experience">
+            <ul>
+                <li><b>sep 2012 - jun 2014</b></li>
+                <li>P.E. TEACHER | <a href="http://www.karedingenhof.be/" target="_blank"
+                                      style="color:#555555;text-decoration: none;">K.A.REDINGENHOF</a></li>
+                <br>
+                <li><b>may 2014 - dec 2016</b></li>
+                <li>TECHNICAL EMPLOYEE ELEKTRONICS | <a href="http://www.atosengineering.com/" target="_blank"
+                                                        style="color:#555555;text-decoration: none;">ATOS
+                    ENGINEERING</a>
+                </li>
+                <br>
+                <li><b>may 2016 - jun 2016</b></li>
+                <li>SOFTWARE DEVELOPMENT PROJECT |<a href="http://www.atosengineering.com/" target="_blank"
+                                                     style="color:#555555;text-decoration: none;">ATOS ENGINEERING</a>
+                </li>
+                <br>
+                <li><b>jan 2017 - present</b></li>
+                <li>TECHNICAL SOFTWARE ENGINEER | <a href="https://www.cegeka.com/be/en" target="_blank"
+                                                     style="color:#555555;text-decoration: none;">CEGEKA</a></li>
+            </ul>
+        </article>
+        <article id="skills">
+            <ul>
+                <li><b>Programming Languages:</b></li>
+                <ul>
+                    <li>Java</li>
+                    <li>C</li>
+                    <li>C#</li>
+                    <li>HTML5</li>
+                </ul>
+                <li><b>Software Knowledge:</b></li>
+                <ul>
+                    <li>JetBeans | Intellij</li>
+                    <li>JetBeans | WebStorm</li>
+                    <li>Microsoft | Visual Studio</li>
+                    <li>Microsoft | Office</li>
+                </ul>
+                <li><b>Version Control:</b></li>
+                <ul>
+                    <li>GIT</li>
+                    <li>Tortoise SVN</li>
+                </ul>
+                <li><b>Other Technical Skills:</b></li>
+                <ul>
+                    <li>Soldering</li>
+                    <li>PCB repair</li>
+                    <li>Electronics</li>
+                </ul>
+            </ul>
+        </article>
+        <articel id="languages">
+            <ul>
+                <li><b>DUTCH</b> | MOTHER LANGUAGE</li>
+                <li><b>ENGLISH</b>| FLUENT</li>
+                <li><b>FRENCH</b> | SUFFICIENT</li>
+            </ul>
+        </articel>
     </article>
 </article>
 </body>
