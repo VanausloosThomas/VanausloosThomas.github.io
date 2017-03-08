@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Curiculum Vitae Thomas Vanausloos</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Cv for CegekaSchool">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Thomas Vanausloos">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <style>
+        body {
+            background-color: darkgray;
+        }
+        #container{
+            margin:0 auto;
+            width: 1400px;
+        }
+
+        article.header-container {
+            background: url('header5.jpg');
+            width: 1400px;;
+            min-height: 300px;
+            position: relative;
+            margin: 0 auto;
+        }
+
+        #headerTitle {
+            font-family: "Franklin Gothic Book";
+            font-size: 60px;
+            color: #BBBBBB;
+            text-align: right;
+            font-style: italic;
+            padding-right: 10px;
+        }
+
+        #navigationList {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #444444;
+            position: absolute;
+            bottom: 0;
+        }
+
+        .navItem {
+            float: left;
+        }
+
+        .navItem a {
+            display: block;
+            color: #EEEEEE;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+
+        .navItem a:hover {
+            background-color: #EEEEEE;
+            color: #222222;
+        }
+
+        .navItem a:active {
+            background-color: #EEEEEE;
+            color: #222222;
+        }
+        #aboutMe{
+            font-family: "Franklin Gothic Book";
+            font-size: 28px;
+            color: #222222;
+            text-align: center;
+            font-style: italic;
+            line-height: 140%;
+
+
+            margin-top:200px;
+            padding-top: 20px;
+            padding-bottom: 40px;
+            background-color: #BBBBBB;
+            float: right;
+        }
+
+        article.pictureOfMyself {
+            /*width:330px;*/
+            /*height:750px;*/
+            /*float:left;*/
+        }
+    </style>
+</head>
+<body>
+    <article id="container">
+        <article class="header-container">
+            <h1 id="headerTitle">THOMAS VANAUSLOOS</h1>
+            <article>
+                <ul id="navigationList">
+                    <li class="navItem"><a href="GeneralInfo.html">General</a></li>
+                    <li class="navItem"><a href="Education.html">Education</a></li>
+                    <li class="navItem"><a href="Experience.html">Experience</a></li>
+                    <li class="navItem"><a href="Skills.html">Skills</a></li>
+                    <li class="navItem"><a href="Languages.html">Languages</a></li>
+                </ul>
+            </article>
+        </article>
+        <article class="pictureOfMyself">
+            <img src="pictureOfMyself.jpg" alt="picture of myself" style="width:330px;height:750px;float:left;">
+        </article>
+        <article>
+                <pre><p id="aboutMe">
+                    " I'm young, motivated and always looking for a challenge.
+                    I have a broad interest field going from sports to electronics to programming.
+                    I'm a real teamplayer passionate about software development ". </p></pre>
+        </article>
+    </article>
+
+</body>
+</html>
