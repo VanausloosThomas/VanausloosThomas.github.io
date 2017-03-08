@@ -24,8 +24,8 @@
             background: url('header5.jpg');
             max-width: 1400px;
             hight:auto;
-            /*min-height: 150px;*/
-            min-height: 300px;
+            min-height: 32vh;
+            /*min-height: 300px;*/
             position: relative;
             margin: 0 auto;
         }
@@ -37,7 +37,7 @@
             color: #BBBBBB;
             text-align: right;
             font-style: italic;
-            padding-right: 10px;
+            padding-right: 1vw;
         }
 
         #navigationList {
@@ -73,83 +73,11 @@
             background-color: #EEEEEE;
             color: #222222;
         }
-        /*.infoContainer{*/
-            /*display: run-in;*/
-        /*}*/
-
-        #aboutMe {
-            font-family: "Franklin Gothic Book";
-            /*font-size: 28px;*/
-            font-size: 1.5vw;
-            max-font-size: 16px;
-            color: #222222;
-            text-align: center;
-            font-style: italic;
-            line-height: 140%;
-
-            /*width: 900px;*/
-            margin-top: 170px;
-            width: 65vw;
-            max-width: 900px;
-            height: auto;
-            padding-top: 1vw;
-            padding-bottom: 2vw;
-            background-color: #BBBBBB;
-            float: right;
-            display: none;
-        }
-
-
-        #education {
-            font-family: "Franklin Gothic Book";
-            /*font-size: 24px;*/
-            color: #222222;
-            text-align: left;
-            font-style: italic;
-            line-height: 140%;
-
-            /*width: 900px;*/
-            /*hight: 800px;*/
-            font-size: 1.5vw;
-            max-font-size: 16px;
-            margin-top: 170px;
-            width: 65vw;
-            max-width: 900px;
-            height: auto;
-
-            margin-top: 170px;
-            background-color: #BBBBBB;
-            float: right;
-            display: none;
-        }
 
         #education ul {
             list-style-type: none;
             display: block;
             text-align: left;
-        }
-
-        #experience {
-            font-family: "Franklin Gothic Book";
-            /*font-size: 24px;*/
-            color: #222222;
-            text-align: left;
-            font-style: italic;
-            line-height: 140%;
-
-            /*width: 900px;*/
-            /*hight: 800px;*/
-            font-size: 1.5vw;
-            max-font-size: 16px;
-            margin-top: 170px;
-            width: 65vw;
-            max-width: 900px;
-            height: auto;
-
-            margin-top: 170px;
-            background-color: #BBBBBB;
-            float: right;
-            display: none;
         }
 
         #experience ul {
@@ -158,56 +86,10 @@
             text-align: left;
         }
 
-        #skills {
-            font-family: "Franklin Gothic Book";
-            /*font-size: 24px;*/
-            color: #222222;
-            text-align: left;
-            font-style: italic;
-            line-height: 140%;
-
-            /*width: 900px;*/
-            /*hight: 800px;*/
-            font-size: 1.5vw;
-            max-font-size: 16px;
-            margin-top: 170px;
-            width: 65vw;
-            max-width: 900px;
-            height: auto;
-
-            margin-top: 170px;
-            background-color: #BBBBBB;
-            float: right;
-            display: none;
-        }
-
         #skills ul {
             list-style-type: none;
             display: block;
             text-align: left;
-        }
-
-        #languages {
-            font-family: "Franklin Gothic Book";
-            /*font-size: 24px;*/
-            color: #222222;
-            text-align: left;
-            font-style: italic;
-            line-height: 140%;
-
-            /*width: 900px;*/
-            /*hight: 800px;*/
-            font-size: 1.5vw;
-            max-font-size: 16px;
-            margin-top: 170px;
-            width: 65vw;
-            max-width: 900px;
-            height: auto;
-
-            margin-top: 170px;
-            background-color: #BBBBBB;
-            float: right;
-            display: none;
         }
 
         #languages ul {
@@ -216,7 +98,14 @@
             display: block;
             text-align: left;
         }
-        #contact {
+
+        #contact ul {
+            hight: 800px;
+            list-style-type: none;
+            display: block;
+            text-align: left;
+        }
+        .infoField{
             font-family: "Franklin Gothic Book";
             /*font-size: 24px;*/
             color: #222222;
@@ -233,16 +122,11 @@
             max-width: 900px;
             height: auto;
 
-            margin-top: 170px;
+            /*margin-top: 170px;*/
+            margin-top:10vh;
             background-color: #BBBBBB;
             float: right;
             display: none;
-        }
-        #contact ul {
-            hight: 800px;
-            list-style-type: none;
-            display: block;
-            text-align: left;
         }
     </style>
 </head>
@@ -267,13 +151,13 @@
         <img src="pictureOfMyself.jpg" alt="picture of myself" style="width:30vw;max-width:260px;height:auto;max-hight:650px;float:left;margin-top: 60px;">
     </article>
     <article class = "infoContainer">
-        <article id="aboutMe">
+        <article class="infoField" id="aboutMe">
             <p>
                 " I'm young, motivated and always looking for a challenge.
                 I have a broad interest field going from sports to electronics to programming.
                 I'm a real teamplayer passionate about software development ".</p>
         </article>
-        <article id="education">
+        <article class="infoField" id="education">
             <ul>
                 <li><b>2001 - 2007</b></li>
                 <li>LATIN MATH| <a href="http://sintpieterscollege.be/" target="_blank"
@@ -299,7 +183,7 @@
                     GROEPT/MOBIUS</a></li>
             </ul>
         </article>
-        <article id="experience">
+        <article class="infoField" id="experience">
             <ul>
                 <li><b>sep 2012 - jun 2014</b></li>
                 <li>P.E. TEACHER | <a href="http://www.karedingenhof.be/" target="_blank"
@@ -321,7 +205,7 @@
                                                      style="color:#555555;text-decoration: none;">CEGEKA</a></li>
             </ul>
         </article>
-        <article id="skills">
+        <article class="infoField" id="skills">
             <ul>
                 <li><b>Programming Languages:</b></li>
                 <ul>
@@ -350,14 +234,14 @@
                 </ul>
             </ul>
         </article>
-        <articel id="languages">
+        <articel class="infoField" id="languages">
             <ul>
                 <li><b>DUTCH</b> | MOTHER LANGUAGE</li>
                 <li><b>ENGLISH</b>| FLUENT</li>
                 <li><b>FRENCH</b> | SUFFICIENT</li>
             </ul>
         </articel>
-        <articel id="contact">
+        <articel class="infoField" id="contact">
             <ul>
                 <li><b>DUTCH</b></li>
                 <li><b>ENGLISH</b></li>
