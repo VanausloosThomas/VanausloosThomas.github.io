@@ -16,12 +16,15 @@
         #container {
             margin: 0 auto;
             max-width: 1400px;
-            width:100%;
+            width:100vw;
+            hight:auto;
         }
 
         article.header-container {
             background: url('header5.jpg');
             max-width: 1400px;
+            hight:auto;
+            /*min-height: 150px;*/
             min-height: 300px;
             position: relative;
             margin: 0 auto;
@@ -29,7 +32,8 @@
 
         #headerTitle {
             font-family: "Franklin Gothic Book";
-            font-size: 50px;
+            font-size: 3.25vw;
+            max-font-size: 50px;
             color: #BBBBBB;
             text-align: right;
             font-style: italic;
@@ -44,6 +48,8 @@
             background-color: #444444;
             position: absolute;
             bottom: 0;
+            max-font-size: 12px;
+            font-size: 1.1vw;
         }
 
         .navItem {
@@ -73,31 +79,44 @@
 
         #aboutMe {
             font-family: "Franklin Gothic Book";
-            font-size: 28px;
+            /*font-size: 28px;*/
+            font-size: 1.5vw;
+            max-font-size: 16px;
             color: #222222;
             text-align: center;
             font-style: italic;
             line-height: 140%;
 
-            width: 900px;
+            /*width: 900px;*/
             margin-top: 170px;
-            padding-top: 20px;
-            padding-bottom: 40px;
+            width: 65vw;
+            max-width: 900px;
+            height: auto;
+            padding-top: 1vw;
+            padding-bottom: 2vw;
             background-color: #BBBBBB;
             float: right;
             display: none;
         }
 
+
         #education {
             font-family: "Franklin Gothic Book";
-            font-size: 24px;
+            /*font-size: 24px;*/
             color: #222222;
             text-align: left;
             font-style: italic;
             line-height: 140%;
 
-            width: 900px;
-            hight: 800px;
+            /*width: 900px;*/
+            /*hight: 800px;*/
+            font-size: 1.5vw;
+            max-font-size: 16px;
+            margin-top: 170px;
+            width: 65vw;
+            max-width: 900px;
+            height: auto;
+
             margin-top: 170px;
             background-color: #BBBBBB;
             float: right;
@@ -112,14 +131,21 @@
 
         #experience {
             font-family: "Franklin Gothic Book";
-            font-size: 24px;
+            /*font-size: 24px;*/
             color: #222222;
             text-align: left;
             font-style: italic;
             line-height: 140%;
 
-            width: 900px;
-            hight: 800px;
+            /*width: 900px;*/
+            /*hight: 800px;*/
+            font-size: 1.5vw;
+            max-font-size: 16px;
+            margin-top: 170px;
+            width: 65vw;
+            max-width: 900px;
+            height: auto;
+
             margin-top: 170px;
             background-color: #BBBBBB;
             float: right;
@@ -134,14 +160,21 @@
 
         #skills {
             font-family: "Franklin Gothic Book";
-            font-size: 24px;
+            /*font-size: 24px;*/
             color: #222222;
             text-align: left;
             font-style: italic;
             line-height: 140%;
 
-            width: 900px;
-            hight: 800px;
+            /*width: 900px;*/
+            /*hight: 800px;*/
+            font-size: 1.5vw;
+            max-font-size: 16px;
+            margin-top: 170px;
+            width: 65vw;
+            max-width: 900px;
+            height: auto;
+
             margin-top: 170px;
             background-color: #BBBBBB;
             float: right;
@@ -156,22 +189,56 @@
 
         #languages {
             font-family: "Franklin Gothic Book";
-            font-size: 24px;
+            /*font-size: 24px;*/
             color: #222222;
             text-align: left;
             font-style: italic;
             line-height: 140%;
 
-            width: 900px;
-            hight: 800px;
+            /*width: 900px;*/
+            /*hight: 800px;*/
+            font-size: 1.5vw;
+            max-font-size: 16px;
+            margin-top: 170px;
+            width: 65vw;
+            max-width: 900px;
+            height: auto;
+
             margin-top: 170px;
             background-color: #BBBBBB;
             float: right;
             display: none;
-            -webkit-animation-name: ;
         }
 
         #languages ul {
+            hight: 800px;
+            list-style-type: none;
+            display: block;
+            text-align: left;
+        }
+        #contact {
+            font-family: "Franklin Gothic Book";
+            /*font-size: 24px;*/
+            color: #222222;
+            text-align: left;
+            font-style: italic;
+            line-height: 140%;
+
+            /*width: 900px;*/
+            /*hight: 800px;*/
+            font-size: 1.5vw;
+            max-font-size: 16px;
+            margin-top: 170px;
+            width: 65vw;
+            max-width: 900px;
+            height: auto;
+
+            margin-top: 170px;
+            background-color: #BBBBBB;
+            float: right;
+            display: none;
+        }
+        #contact ul {
             hight: 800px;
             list-style-type: none;
             display: block;
@@ -196,8 +263,8 @@
         </article>
     </article>
     <article class="pictureOfMyself">
-        <img src="pictureOfMyself.jpg" alt="picture of myself"
-             style="width:330px;height:750px;float:left;margin-top: 60px;">
+        <!--<img src="pictureOfMyself.jpg" alt="picture of myself" style="width:330px;height:750px;float:left;margin-top: 60px;">-->
+        <img src="pictureOfMyself.jpg" alt="picture of myself" style="width:30vw;max-width:260px;height:auto;max-hight:650px;float:left;margin-top: 60px;">
     </article>
     <article class = "infoContainer">
         <article id="aboutMe">
@@ -307,60 +374,7 @@
         document.getElementById('experience').style.display = 'none';
         document.getElementById('skills').style.display = 'none';
         document.getElementById('languages').style.display = 'none';
-    }
-    function showGeneral() {
-        disableAll();
-        var x = document.getElementById('aboutMe');
-        if (x.style.display === 'none') {
-            x.style.display = 'block';
-        } else {
-            x.style.display = 'none';
-        }
-    }
-    function showEducation() {
-        disableAll();
-        var x = document.getElementById('education');
-        if (x.style.display === 'none') {
-            x.style.display = 'block';
-        } else {
-            x.style.display = 'none';
-        }
-    }
-    function showExperience() {
-        disableAll();
-        var x = document.getElementById('experience');
-        if (x.style.display === 'none') {
-            x.style.display = 'block';
-        } else {
-            x.style.display = 'none';
-        }
-    }
-    function showSkills() {
-        disableAll();
-        var x = document.getElementById('skills');
-        if (x.style.display === 'none') {
-            x.style.display = 'block';
-        } else {
-            x.style.display = 'none';
-        }
-    }
-    function showLanguages() {
-        disableAll();
-        var x = document.getElementById('languages');
-        if (x.style.display === 'none') {
-            x.style.display = 'block';
-        } else {
-            x.style.display = 'none';
-        }
-    }
-    function showMedia() {
-        disableAll();
-        var x = document.getElementById('media');
-        if (x.style.display === 'none') {
-            x.style.display = 'block';
-        } else {
-            x.style.display = 'none';
-        }
+        document.getElementById('contact').style.display = 'none';
     }
 
     function show(item) {
