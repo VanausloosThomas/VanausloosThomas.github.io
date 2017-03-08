@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <title>Curiculum Vitae Thomas Vanausloos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="description" content="Cv for CegekaSchool">
     <meta name="keywords" content="HTML,CSS,JavaScript">
     <meta name="author" content="Thomas Vanausloos">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
     <style>
         body {
@@ -15,12 +15,13 @@
 
         #container {
             margin: 0 auto;
-            width: 1400px;
+            max-width: 1400px;
+            width:100%;
         }
 
         article.header-container {
             background: url('header5.jpg');
-            width: 1400px;;
+            max-width: 1400px;
             min-height: 300px;
             position: relative;
             margin: 0 auto;
@@ -167,9 +168,11 @@
             background-color: #BBBBBB;
             float: right;
             display: none;
+            -webkit-animation-name: ;
         }
 
         #languages ul {
+            hight: 800px;
             list-style-type: none;
             display: block;
             text-align: left;
@@ -177,71 +180,18 @@
     </style>
 </head>
 <body>
-<script>
-    function disableAll() {
-        document.getElementById('aboutMe').style.display = 'none';
-        document.getElementById('education').style.display = 'none';
-        document.getElementById('experience').style.display = 'none';
-        document.getElementById('skills').style.display = 'none';
-        document.getElementById('languages').style.display = 'none';
-    }
-    function showGeneral() {
-        disableAll();
-        var x = document.getElementById('aboutMe');
-        if (x.style.display === 'none') {
-            x.style.display = 'block';
-        } else {
-            x.style.display = 'none';
-        }
-    }
-    function showEducation() {
-        disableAll();
-        var x = document.getElementById('education');
-        if (x.style.display === 'none') {
-            x.style.display = 'block';
-        } else {
-            x.style.display = 'none';
-        }
-    }
-    function showExperience() {
-        disableAll();
-        var x = document.getElementById('experience');
-        if (x.style.display === 'none') {
-            x.style.display = 'block';
-        } else {
-            x.style.display = 'none';
-        }
-    }
-    function showSkills() {
-        disableAll();
-        var x = document.getElementById('skills');
-        if (x.style.display === 'none') {
-            x.style.display = 'block';
-        } else {
-            x.style.display = 'none';
-        }
-    }
-    function showLanguages() {
-        disableAll();
-        var x = document.getElementById('languages');
-        if (x.style.display === 'none') {
-            x.style.display = 'block';
-        } else {
-            x.style.display = 'none';
-        }
-    }
 
-</script>
 <article id="container">
     <article class="header-container">
         <h1 id="headerTitle">THOMAS VANAUSLOOS</h1>
         <article>
             <ul id="navigationList">
-                <li class="navItem"><a onclick="showGeneral()">General</a></li>
-                <li class="navItem"><a onclick="showEducation()">Education</a></li>
-                <li class="navItem"><a onclick="showExperience()">Experience</a></li>
-                <li class="navItem"><a onclick="showSkills()">Skills</a></li>
-                <li class="navItem"><a onclick="showLanguages()">Languages</a></li>
+                <li class="navItem"><a onclick="show('aboutMe')">General</a></li>
+                <li class="navItem"><a onclick="show('education')">Education</a></li>
+                <li class="navItem"><a onclick="show('experience')">Experience</a></li>
+                <li class="navItem"><a onclick="show('skills')">Skills</a></li>
+                <li class="navItem"><a onclick="show('languages')">Languages</a></li>
+                <li class="navItem"><a onclick="show('contact')">Contact</a></li>
             </ul>
         </article>
     </article>
@@ -340,7 +290,90 @@
                 <li><b>FRENCH</b> | SUFFICIENT</li>
             </ul>
         </articel>
+        <articel id="contact">
+            <ul>
+                <li><b>DUTCH</b></li>
+                <li><b>ENGLISH</b></li>
+                <li><b>FRENCH</b></li>
+            </ul>
+        </articel>
     </article>
 </article>
+
+<script>
+    function disableAll() {
+        document.getElementById('aboutMe').style.display = 'none';
+        document.getElementById('education').style.display = 'none';
+        document.getElementById('experience').style.display = 'none';
+        document.getElementById('skills').style.display = 'none';
+        document.getElementById('languages').style.display = 'none';
+    }
+    function showGeneral() {
+        disableAll();
+        var x = document.getElementById('aboutMe');
+        if (x.style.display === 'none') {
+            x.style.display = 'block';
+        } else {
+            x.style.display = 'none';
+        }
+    }
+    function showEducation() {
+        disableAll();
+        var x = document.getElementById('education');
+        if (x.style.display === 'none') {
+            x.style.display = 'block';
+        } else {
+            x.style.display = 'none';
+        }
+    }
+    function showExperience() {
+        disableAll();
+        var x = document.getElementById('experience');
+        if (x.style.display === 'none') {
+            x.style.display = 'block';
+        } else {
+            x.style.display = 'none';
+        }
+    }
+    function showSkills() {
+        disableAll();
+        var x = document.getElementById('skills');
+        if (x.style.display === 'none') {
+            x.style.display = 'block';
+        } else {
+            x.style.display = 'none';
+        }
+    }
+    function showLanguages() {
+        disableAll();
+        var x = document.getElementById('languages');
+        if (x.style.display === 'none') {
+            x.style.display = 'block';
+        } else {
+            x.style.display = 'none';
+        }
+    }
+    function showMedia() {
+        disableAll();
+        var x = document.getElementById('media');
+        if (x.style.display === 'none') {
+            x.style.display = 'block';
+        } else {
+            x.style.display = 'none';
+        }
+    }
+
+    function show(item) {
+        disableAll();
+        var x = document.getElementById(item);
+        if (x.style.display === 'none') {
+            x.style.display = 'block';
+        } else {
+            x.style.display = 'none';
+        }
+    }
+
+</script>
+
 </body>
 </html>
